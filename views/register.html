@@ -1,0 +1,45 @@
+
+
+<body>
+    <h1>Formulario de registro</h1>
+    <form name="registro" method="get" action="/">
+        <label for="nombre">Nombre y Apellido</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
+
+        <label for="usuario">Nombre de usuario</label>
+        <input type="usuario" id="usuario" name="usuario" required>
+
+        <label for="date">Fecha de cumpleaños</label>
+        <input type="date" id="date" name="date" min="1950-01-01" max="" required>
+
+        <label for="domicilio">Domicilio</label>
+        <input type="text" id="domicilio" name="domicilio" required>
+        
+        <label for="perfil">Perfil del usuario</label>
+        <select id="perfil" name="perfil">
+            <option value="comprar">Comprar</option>
+            <option value="vender">Vender</option>  
+        </select> 
+        
+
+        <label for="categorias">Categorías de interés</label>
+        <input type="checkbox" id="categorias" name="categorias" value="electro">Electro
+        <input type="checkbox" id="categorias" name="categorias" value="moda">Moda
+        <input type="checkbox" id="categorias" name="categorias" value="hogar">Hogar
+        <input type="checkbox" id="categorias" name="categorias" value="jugueteria">Juguetería
+        <input type="checkbox" id="categorias" name="categorias" value="vida-sana">Vida Sana
+
+        <label for="foto">Seleccionar foto de usuario</label>
+        <input type="file" name="foto" id="foto" accept=".jpg, .png">
+
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass" required>
+
+        <label for="confirmar-pass">Confirmar contraseña</label>
+        <input type="password" name="confirmar-pass" id="confirmar-pass" required>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+
+    </form>
+</body>
